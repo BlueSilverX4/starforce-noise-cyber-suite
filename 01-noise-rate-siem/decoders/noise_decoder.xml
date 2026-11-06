@@ -1,0 +1,9 @@
+<decoder name="noise_telemetry">
+  <prematch>^NOISE_EVENT</prematch>
+</decoder>
+
+<decoder name="noise_telemetry_child">
+  <parent>noise_telemetry</parent>
+  <regex>^NOISE_EVENT srcip=(\S+) type=(\S+) score=(\d+)</regex>
+  <order>srcip, noise_type, noise_score</order>
+</decoder>

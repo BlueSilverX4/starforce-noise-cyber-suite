@@ -1,0 +1,9 @@
+services:
+  cowrie:
+    image: cowrie/cowrie:latest
+    container_name: black-hole-server
+    ports:
+      - "2222:2222"
+    volumes:
+      - /home/brandongregg/starforce-noise-cyber-suite/03-black-hole-honeypot/cowrie-logs:/cowrie/cowrie-git/var/log/cowrie
+    restart: unless-stopped

@@ -1,0 +1,13 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	x509
+#open	2026-11-05-03-01-21
+#fields	ts	fingerprint	certificate.version	certificate.serial	certificate.subject	certificate.issuer	certificate.not_valid_before	certificate.not_valid_after	certificate.key_alg	certificate.sig_alg	certificate.key_type	certificate.key_length	certificate.exponent	certificate.curve	san.dns	san.uri	san.email	san.ip	basic_constraints.ca	basic_constraints.path_len	host_cert	client_cert
+#types	time	string	count	string	string	string	time	time	string	string	string	count	string	string	vector[string]	vector[string]	vector[string]	vector[addr]	bool	count	bool	bool
+1793865680.532187	489073ce0c5e73571af52561b2b2ac9fe6aa6627a8325fea6180ce0a399b9f45	3	06BA97C0A0DA64BD610F3BDD4E3082BA	CN=bsg.brave.com	CN=Amazon RSA 2048 M04,O=Amazon,C=US	1782864000.000000	1799971199.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	bsg.brave.com,*.bsg.brave.com	-	-	-	F	-	T	F
+1793865680.532187	138bdf6e23ac971eb4e626b279dd6a26f057510f1de394293a5eea2860de019b	3	0773124F2A952E3ED18A58BDB85D1BC0CE5F27	CN=Amazon RSA 2048 M04,O=Amazon,C=US	CN=Amazon Root CA 1,O=Amazon,C=US	1661293595.000000	1913754395.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	-	-	-	-	T	0	F	F
+1793865680.532187	87dcd4dc74640a322cd205552506d1be64f12596258096544986b4850bc72706	3	067F944A2A27CDF3FAC2AE2B01F908EEB9C4C6	CN=Amazon Root CA 1,O=Amazon,C=US	CN=Starfield Services Root Certificate Authority - G2,O=Starfield Technologies\\, Inc.,L=Scottsdale,ST=Arizona,C=US	1432555200.000000	2145834000.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	-	-	-	-	T	-	F	F
+1793865683.478508	fb537234b3e34f0ba9147ecb94c095dbd6995ab1f759e70159fc555bc45a48b8	3	091EE6D7123C243D15270EF6A2E0D0B1	CN=*.wdp.brave.com	CN=Amazon RSA 2048 M04,O=Amazon,C=US	1789516800.000000	1806623999.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	*.wdp.brave.com,*.wdp-public.brave.com	-	-	-	F	-	T	F
+#close	2026-11-05-03-15-10

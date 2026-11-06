@@ -1,0 +1,11 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	quic
+#open	2026-11-05-03-04-45
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	version	client_initial_dcid	client_scid	server_scid	server_name	client_protocol	history
+#types	time	string	addr	port	addr	port	string	string	string	string	string	string	string
+1793865803.596849	C8jl6C3cKjs79nWye	192.168.1.157	57265	142.251.167.84	443	1	2db5c2358e440cec	(empty)	edb5c2358e440cec	accounts.google.com	h3	IISIiiishooihihoIIIiIZHOhhHOHHoO
+1793866199.278366	CmDY5b1w6Age8t7m8i	192.168.1.157	47608	142.251.152.2	443	1	a645aa8062a52e2e	(empty)	e645aa8062a52e2e	gemini.google.com	h3	IISiiisIhooihhoIiIiIhIiiIiIiIiIihZHOHOOHoOo
+#close	2026-11-05-03-15-10

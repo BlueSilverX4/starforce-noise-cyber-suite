@@ -1,0 +1,16 @@
+<group name="starforce_noise,">
+  <!-- Baseline Noise Alert -->
+  <rule id="100050" level="5">
+    <decoded_as>noise_telemetry</decoded_as>
+    <description>Noise Rate Anomaly Detected from $(srcip) [Type: $(noise_type)]</description>
+  </rule>
+
+  <!-- High Threshold: Noise Change Triggered -->
+  <rule id="100051" level="12">
+    <if_matched_sid>100050</if_matched_sid>
+    <same_srcip />
+    <frequency>5</frequency>
+    <timeframe>60</timeframe>
+    <description>CRITICAL: Noise Rate Exceeded 100% - System Desynchronization / Noise Change Active</description>
+  </rule>
+</group>
